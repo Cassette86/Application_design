@@ -4,6 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import { useCallback } from 'react';
+import UpperWatchScreen from '../Components/Watch_page/Upper_Watch_page/UpperWatch_page';
 
 //MAIN FUNCTION : 
 export default function Watch_page() {
@@ -27,7 +28,7 @@ export default function Watch_page() {
   const WatchScreen = () => {
     return (
         <View style={styles.container}>
-            <Text>test du jour</Text>
+            <UpperWatchScreen/>
         </View>
     );
   };
@@ -48,8 +49,8 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
-        left : 30,
-        top : 120,
-        color : '#FCFCFF',
+        left : 0,
+        top : 0,
+        backgroundColor : '#FFC8B7',
     },
   });

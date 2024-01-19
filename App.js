@@ -5,7 +5,9 @@ import Watch_page from './Pages/Watch_page';
 
 export default function App() {
   return (
-    <Watch_page />
+    <View style={styles.container}>
+      <Watch_page />
+    </View>
   );
 }
 
@@ -13,7 +15,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
   },
 });
