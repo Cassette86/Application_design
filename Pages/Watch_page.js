@@ -27,7 +27,7 @@ export default function Watch_page() {
   const WatchScreen = () => {
     return (
         <View style={styles.container}>
-            <Text>test</Text>
+            <Text>test du jour</Text>
         </View>
     );
   };
