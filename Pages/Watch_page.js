@@ -6,6 +6,7 @@ import { useFonts } from 'expo-font';
 import { useCallback } from 'react';
 import UpperWatchScreen from '../Components/Watch_page/Upper_Watch_page/UpperWatch_page';
 
+
 //MAIN FUNCTION : 
 export default function Watch_page() {
   //FONTS LOADING :
@@ -28,7 +29,7 @@ export default function Watch_page() {
   const WatchScreen = () => {
     return (
         <View style={styles.container}>
-            <UpperWatchScreen/>
+          <UpperWatchScreen/>
         </View>
     );
   };
@@ -36,7 +37,6 @@ export default function Watch_page() {
   //RETURN FUNCTION :
   return (
     <>
-      <StatusBar style="auto" />
       <WatchScreen />
       
     </>
@@ -49,8 +49,9 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'flex-start',
         alignItems: 'flex-start',
-        left : 0,
+        backgroundColor : '#FCFCFF',
         top : 0,
-        backgroundColor : '#FFC8B7',
+        left : 0,
+        gap : 0,
     },
   });
