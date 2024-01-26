@@ -3,6 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, Image} from 'react-native';
 import Title_subtitle_price from '../Bottom_Watch_page/Title_subtitle_price_Watch_page';
 import DescriptionScreen from '../Bottom_Watch_page/Description_Watch_page';
+import Add_to_card from '../Bottom_Watch_page/Add_to_card';
 
 //MAIN FUNCTION :
 export default function Upper_Watch_page() {
@@ -18,6 +19,7 @@ export default function Upper_Watch_page() {
         </View>
         <Title_subtitle_price />
         <DescriptionScreen />
+        <Add_to_card/>
       </View>
     );
   };
@@ -58,5 +60,5 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#1b153d',
     letterSpacing: -0.24,
-  }
+  },
 });

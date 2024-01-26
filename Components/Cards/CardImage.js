@@ -1,11 +1,14 @@
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 
+//'./images/AppleWatch.png'
+
 const CardImage = ({ color, image }) => {
+  console.log( image);
   return (
     <View style={styles.container}>
       <View style={[styles.frame_color, { backgroundColor: color }]}>
-        <Image style={styles.image} source={require('./images/AppleWatch.png')} />
+        <Image style={styles.image} source={image} />
       </View>
     </View>
   );

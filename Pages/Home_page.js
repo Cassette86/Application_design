@@ -29,41 +29,43 @@ export default function Home_page() {
   //SCREEN FUNCTION :
   const HomeScreen = () => {
     return (
-      <View style={styles.container}>
-        <View style={{flexDirection:'column',gap: 30}}>
-          <TitleHomePage/>
-          <SubTitleComponent/>
-          <View style={styles.row}>
-            <CardComponent
-              color="#FFC8B7"
-              title="Apple Watch"
-              subtitle="Series 7"
-              price="799"
-              image="AppleWatch"
-            />
-            <CardComponent
-              color="#FFEFE1"
-              title="Galaxy Watch"
-              subtitle="Series 4"
-              price="599"
-              image="AppleWatch"
-            />
-          </View>
-                    <View style={styles.row}>
-            <CardComponent
-              color="#F0DEC5"
-              title="Mi Watch"
-              subtitle="All series"
-              price="299"
-              image="AppleWatch"
-            />
-            <CardComponent
-              color="#FCF1F0"
-              title="Amazfit Bip U"
-              subtitle="Pro Series"
-              price="199"
-              image="AppleWatch"
-            />
+      <View style={styles.background}>
+        <View style={styles.container}>
+          <View style={{flexDirection:'column',gap: 30}}>
+            <TitleHomePage/>
+            <SubTitleComponent/>
+            <View style={styles.row}>
+              <CardComponent
+                color="#FFC8B7"
+                title="Apple Watch"
+                subtitle="Series 7"
+                price="799"
+                image="./images/AppleWatch.png"
+              />
+              <CardComponent
+                color="#FFEFE1"
+                title="Galaxy Watch"
+                subtitle="Series 4"
+                price="599"
+                image="AppleWatch"
+              />
+            </View>
+                      <View style={styles.row}>
+              <CardComponent
+                color="#F0DEC5"
+                title="Mi Watch"
+                subtitle="All series"
+                price="299"
+                image="AppleWatch"
+              />
+              <CardComponent
+                color="#FCF1F0"
+                title="Amazfit Bip U"
+                subtitle="Pro Series"
+                price="199"
+                image="AppleWatch"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -82,6 +84,10 @@ export default function Home_page() {
 
 // STYLE FUNCTION :
 const styles = StyleSheet.create({
+    background : {
+      backgroundColor: '#FCFCFF',
+      flex : 1,
+    },
     container: {
         flex: 1,
         justifyContent: 'flex-start',

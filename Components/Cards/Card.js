@@ -30,15 +30,15 @@ const styles = StyleSheet.create({
   frame_card: {
     width: 157,
     height: 213,
-    backgroundColor: '#D3D3D3',
+    backgroundColor: '#FFFFFF',
     borderRadius: 14,
     overflow: 'hidden',
     position: 'relative',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.5,
+    shadowOpacity: 0.1,
     shadowRadius: 4,
-    elevation: 5,
+    elevation: 1,
   },
 });
 
